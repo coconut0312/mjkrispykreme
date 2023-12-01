@@ -1,0 +1,354 @@
+#section01{
+    background: #fff;
+    width: 100vw;
+    padding-bottom: 150px;
+}
+
+#sc01_slider{
+    width: 100vw;
+    height: 710px;
+    position: relative;
+}
+
+
+#sc01_slider .slick-dots{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+
+#sc01_slider .slick-dots > li{
+    width: 10px;
+    height: 10px;
+    background: #106a39;
+    border-radius: 50%;
+    transition:all 1s;
+    cursor: pointer
+;
+}
+
+#sc01_slider .slick-dots > li.slick-active{
+    width: 15px;
+    height: 15px;
+    background: #cd002b;
+    border-radius: 50%;
+}
+
+#sc01_slider .slick-dots > li > button{
+    display: none;
+}
+
+#section01 .slider_button{
+    cursor: pointer
+}
+
+#section01 .prev{
+    position: absolute;
+    top: 550px;
+    left: 10px;
+    z-index: 10;
+}
+
+#section01 .next{
+    position: absolute;
+    top: 550px;
+    right: 10px;
+
+}
+
+#section02{
+    position: relative;
+    display: flex;
+    height: 826px;
+    background: #fff;
+}
+
+
+#section02 .menu_title{
+    position: absolute;
+    left: 50%;
+    top: 48px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#section02 .menu_title > div:nth-child(1){
+    margin-bottom: 30px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    margin: 63px auto 0 ;
+}
+
+#menu > li{
+    margin-right: 7px;
+}
+
+#menu > li:last-child{
+    margin-right: 0;
+}
+
+
+#section03{
+    position: relative;
+    height: 600px;
+    z-index: 1;
+}
+
+#section03 .bg{
+    height: 600px;
+    overflow: hidden;
+}
+
+
+
+#section03 .bg .fix_elem{
+    height: 1920px;
+    background: url("../img/brand_storybg.png") no-repeat 0 0 ;
+}
+
+#section03 .box01{
+    width: 571px;
+    height: 525px;
+    background: #106a39;
+    opacity: 95%;
+    bottom: -110px;
+    right: 290px;
+    position: absolute;
+
+}
+
+.box01 > div{
+    display: flex;
+    justify-content: center;
+}
+
+#section03 .brand_story{
+    margin-top: 89px;
+}
+#section03 .big_text{
+    margin-top: 26px;
+}
+#section03 .small_text{
+    margin-top: 58px;
+}
+
+
+#section03 .button{
+    margin-top: 42px;
+}
+
+
+#section04{
+    position: relative;
+    height: 870px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+#section04 #contents{
+    width: 851px;
+    height: 510px;
+    position: absolute;
+    top: 233px;
+    left: 0;
+}
+
+#section04 .text01{
+    position: absolute;
+    top: 0;
+    left: 340px;
+}
+
+#section04 .newsevent_text{
+    position: absolute;
+    top: 54px;
+}
+
+#section04 .allview{
+    position: absolute;
+    top: 206px;
+}
+
+
+#section04 .image{
+    position: relative;
+    left: 729px;
+    height: 480px;
+}
+
+#section04 .image .list{
+    width: 853px;
+    height: 480px;
+    position: relative;
+}
+
+
+#section04 .image .icecream{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#section04 .image .onemore{
+    position: absolute;
+    top: 253px;
+    left: 0;
+}
+
+#section04 .image .originalfilled{
+    position: absolute;
+    top: 0;
+    left: 461px;
+}
+
+
+#section04 .timeline{
+    width: 700px;
+    height: 2px;
+    background: #dcdcdc;
+    position: absolute;
+    left: 730px;
+    bottom: -5px;
+}
+
+#section04 .timeline .progress{
+    width: 0;
+    height: 3px;
+    background: #626262;
+}
+
+
+
+#section04 .timeline .progress.on{
+    animation: progress 2s 1 forwards linear;
+}
+
+@keyframes progress {
+    to{
+        width: 100%;
+    }
+}
+
+
+
+.event_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: -730px;
+    bottom: -15px;
+}
+
+
+.event_button .prev{
+    margin-right: 45px;
+    opacity: 50%;
+}
+
+
+#section05{
+    height: 553px;
+    background: #fff;
+    position: relative;
+}
+
+#section05 > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#storetext{
+    margin: 61px 339px;
+}
+#storetext .storetext01{
+    margin-bottom: 80px;
+
+}#storetext .storesearch01{
+    margin-bottom: 23px;
+}
+
+
+#storelist{
+    /*display: flex;*/
+    width: 918px;
+    height: 287px;
+    margin-top: 143px;
+    margin-left: 663px;
+    /*overflow: hidden;*/
+}
+#storelist .list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#storelist .list > div{
+    box-shadow: 5px 5px 6px 0.5px #00000047;
+    /*          x   y   blur  sp color */
+    margin: 10px;
+}
+
+#store_button{
+    margin: 247px 1611px;
+}
+#store_button .store_button01{
+    margin-bottom: 45px;
+}
+
+#section06{
+    height: 676px;
+    position: relative;
+    background: #fff;
+}
+
+#snstext{
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+
+#snsimage{
+    display: flex;
+    width: 1240px;
+    height: 310px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#snsimage .slick-slide{
+    width: 310px;
+}
+
+#sns .snsbutton_prev, .snsbutton_next{
+    position: absolute;
+    top: 290px;
+    left: 273px;
+}
+
+#sns .snsbutton_next{
+    left: 1620px;
+}
+
+#snslist{
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#snslist > div{
+    margin-right: 16px;
+}

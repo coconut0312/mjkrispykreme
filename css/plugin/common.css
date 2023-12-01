@@ -1,0 +1,383 @@
+
+html, body {
+    /*margin: 0;*/
+    /*height: 100%;*/
+    /*-webkit-overflow-scrolling: touch;*/
+    /*overflow-scrolling: touch;*/
+    /*overflow: hidden;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font-size: 18px;
+    font-family:  Noto Sans JP, "NanumBarunGothic" , sans-serif;
+}
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css");
+
+
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+}
+
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.scroll-content > section{
+    width: 100vw;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+
+.scroll-content > section:nth-child(even){
+    /*background: red;*/
+}
+
+
+
+.posNum {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 50px;
+    margin: -25px 0 0 -150px;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    z-index: 9999;
+}
+
+
+a{
+    color: inherit;
+}
+
+
+
+.gnb > li.on{
+    color: #cd002b;
+}
+
+.gnb> li.on:after{
+    opacity: 1;
+}
+
+
+.startPoint{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: url("../../img/top.png");
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+#mega{
+    width: 100vw;
+    height: 0;
+    /*height: 300px;*/
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 179px;
+    z-index: 100;
+    border-bottom: 0 solid transparent;
+    transition:all 1s;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "NanumBarunGothic",sans-serif;
+}
+
+#header:hover #mega{
+    height: 213px;
+    border-bottom: 2px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+#mega .gnb_text{
+    margin-top: 25px;
+    width: 850px;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    cursor: pointer
+}
+
+.gnb_text .menu_gnb{
+    width: 150px;
+}
+
+.gnb_text .store_gnb{
+    width: 167px;
+}
+
+.gnb_text .homeservice_gnb{
+    width: 158px;
+}
+
+.gnb_text .event_gnb{
+    width: 139px;
+}
+
+.gnb_text .brand_gnb{
+    width: 142px;
+}
+
+.gnb_text .survey_gnb{
+    width: 75px;
+}
+.menu_gnb > li{
+    margin-bottom: 12px;
+}
+.store_gnb > li{
+    margin-bottom: 12px;
+}
+.homeservice_gnb > li{
+    margin-bottom: 12px;
+}
+.event_gnb > li{
+    margin-bottom: 12px;
+}
+.brand_gnb > li{
+    margin-bottom: 12px;
+}
+.survey_gnb > li{
+    margin-bottom: 12px;
+}
+
+#mega .menu_gnb > li{
+    position: relative;
+    transition:all .5s;
+}
+
+#mega .menu_gnb > li:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: url("../../img/check_03.png") no-repeat center;
+    display: inline-block;
+    /*margin-left: 0;*/
+    transform: translateX(0);
+    opacity: 0;
+    transition:all .5s;
+}
+
+#mega .store_gnb > li:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: url("../../img/check_03.png") no-repeat center;
+    display: inline-block;
+    /*margin-left: 0;*/
+    transform: translateX(0);
+    opacity: 0;
+    transition:all .5s;
+}
+
+#mega .homeservice_gnb > li:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: url("../../img/check_03.png") no-repeat center;
+    display: inline-block;
+    /*margin-left: 0;*/
+    transform: translateX(0);
+    opacity: 0;
+    transition:all .5s;
+}
+
+#mega .event_gnb > li:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: url("../../img/check_03.png") no-repeat center;
+    display: inline-block;
+    /*margin-left: 0;*/
+    transform: translateX(0);
+    opacity: 0;
+    transition:all .5s;
+}
+
+#mega .brand_gnb > li:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: url("../../img/check_03.png") no-repeat center;
+    display: inline-block;
+    /*margin-left: 0;*/
+    transform: translateX(0);
+    opacity: 0;
+    transition:all .5s;
+}
+
+#mega .survey_gnb > li:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: url("../../img/check_03.png") no-repeat center;
+    display: inline-block;
+    /*margin-left: 0;*/
+    transform: translateX(0);
+    opacity: 0;
+    transition:all .5s;
+}
+
+
+#mega .menu_gnb > li:hover{
+    color: #cd002b;
+    font-weight: 700;
+}
+
+#mega .menu_gnb > li:hover:after{
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+#mega .store_gnb > li:hover{
+    color: #cd002b;
+    font-weight: 700;
+}
+
+#mega .store_gnb > li:hover:after{
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+
+#mega .homeservice_gnb > li:hover{
+    color: #cd002b;
+    font-weight: 700;
+}
+
+#mega .homeservice_gnb > li:hover:after{
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+
+#mega .event_gnb > li:hover{
+    color: #cd002b;
+    font-weight: 700;
+}
+
+#mega .event_gnb > li:hover:after{
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+
+#mega .brand_gnb > li:hover{
+    color:#cd002b;
+    font-weight: 700;
+}
+
+#mega .brand_gnb > li:hover:after{
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+
+
+#mega .survey_gnb > li:hover{
+    color: #cd002b;
+    font-weight: 700;
+}
+
+#mega .survey_gnb > li:hover:after{
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+
+
+#header{
+    position: relative;
+    font-family: Noto Sans,sans-serif;
+}
+
+
+#header .top{
+    background: #106a39;
+    height: 32px;
+    display: flex;
+}
+
+.top .text{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 1406px;
+}
+
+#header .bottom{
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    height: 146px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#header .bottom .logo{
+    position: absolute;
+    left: 50%;
+    top: 27px;
+    transform: translate(-50%);
+}
+
+
+#header .bottom .gnb{
+    width: 795px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-weight: 700;
+
+}
+
+#header .bottom .gnb > li{
+    position: relative;
+}
+
+#header .bottom .gnb > li:after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition:all 1s;
+}
+
+#header .bottom .gnb > li.on:after{
+    width: 100%;
+}
